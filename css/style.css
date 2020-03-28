@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-top{
+    border : 2px dashed #cccccc;
+    align-items: center;
+    padding: 13px;
+}
+
+.table-top h3{
+    text-align: center;
+}
+
+.add-fom-section{
+    margin-top: 20px;
+    border : 2px dashed #cccccc;
+    align-items: center;
+    padding: 13px;
+}
+.add-section-button button{
+    border-radius: 0;
+    outline: none;
+    border: none;
+}
+
+.show-list{
+    margin-top: 30px;
+}

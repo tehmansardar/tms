@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Schedule System</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="table-top">
+            <h3>Time Schedule System</h3>
+            <div class="row ml-0 mr-0">
+                <div class="col-md-12 text-center"><strong>Total:</strong> <span class="badge badge-primary counted-hours">120 Hours</span></div><br><br>
+                    <!-- <div class="col-md-12 text-center">
+                        <strong>Web Development</strong> <span class="category-hours">(120)</span>
+                        <strong>Moble Development</strong> <span class="category-hours">(120)</span>
+                        <strong>database Development</strong> <span class="category-hours">(120)</span>
+                        <strong>Front-end Development</strong> <span class="category-hours">(120)</span>
+                        <strong>WordPress Development</strong> <span class="category-hours">(120)</span>
+                    </div> -->
+                    <div class="wrap-category text-center">
+                        <div class="row ml-0 mr-0">
+                            <div class="md-4">
+                                <input type="text" placeholder="Add Category" class="form-control category-name">
+                            </div>
+                            <div class="md-4">
+                                <button type="button" class="btn btn-primary submit-category">ADD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <form id="form-submit" method="post" class="add-fom-section">
+            <!-- <div class="add-section-button text-center">
+                <button type="button" class="btn btn-primary">Add +</button>
+            </div> -->
+
+            <div class="row ml-0 mr-0 add-section-form" style="align-items: center;">
+                <div class="form-group col-md-4">
+                        <input type="text" class="form-control input-title" name="input-title" placeholder="Enter The Title" autocomplete="off">
+                </div>
+                
+                <div class="form-group col-md-2">
+                    <select id="category-values" class="form-control input-category" name="input-category">
+                    <option value="">Category</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-2">
+                        <input type="number" class="form-control input-hour" name="input-hour" placeholder="Add Hour">
+                </div>
+                
+                <div class="form-group col-md-2">
+                        <button type="submit" name="" class="btn btn-primary btn-add">Add +</button>
+                </div>
+            </div>
+        </form>
+        <section class="show-list">
+                <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Hours</th>
+                          </tr>
+                        </thead>
+                        <tbody id="list-data">
+                          
+                        </tbody>
+                      </table>
+        </section>
+    </div>
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
