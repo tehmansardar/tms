@@ -29,3 +29,11 @@
 .show-list{
     margin-top: 30px;
 }
+
+.form-control, .btn{
+    border-radius: 0;
+    outline: none;
+}
+.form-control:focus, .btn:focus{
+    box-shadow: none !important;
+}
